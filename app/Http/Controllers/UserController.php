@@ -180,4 +180,52 @@ class UserController extends Controller
         $response = $client->search($params);
         return response()->json($response);
     }
+
+    public function groupByState(){
+        $params = [
+            'index' => 'bank',
+            'body'  => [
+                'size' => 0,
+                'aggs' => [
+                    'group_by_state' => [
+                        'terms' => [ // must => AND, should => OR
+                            'field' => "state.keyword",
+                        ],
+                    ]
+                ]
+            ]
+        ];
+
+        $client = ClientBuilder::create()->build();
+        $response = $client->search($params);
+        return response()->json($response);
+
+    }
+
+    public function groupByStateAverage(){
+        $params = [
+            'index' => 'bank',
+            'body'  => [
+                'size' => 0,
+                'aggs' => [
+                    'group_by_state' => [
+                        'terms' => [ // must => AND, should => OR
+                            'field' => "state.keyword",
+                        ],
+                        'aggs' => [
+                            'average_balanceee' =>[
+                                'avg' => [
+                                    'field' => 'balance'
+                                ]
+                            ]
+                        ]
+                    ],
+                ]
+            ]
+        ];
+
+        $client = ClientBuilder::create()->build();
+        $response = $client->search($params);
+        return response()->json($response);
+    }
 }

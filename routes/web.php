@@ -23,3 +23,6 @@ Route::get('/create-post-index', [UserController::class, 'indexPost']);
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/delete-user-index', [UserController::class, 'deleteUserIndex']);
 Route::get('/search-multiple-index', [UserController::class, 'searchMultiIndex']);
+
+Route::get('/group-by-state', [UserController::class, 'groupByState']);
+Route::get('/group-by-state-average', [UserController::class, 'groupByStateAverage']);

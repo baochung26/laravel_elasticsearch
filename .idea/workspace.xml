@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8953895f-10f6-42fd-a622-87d44912e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/accounts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,11 +146,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/database/migrations" />
     </key>
   </component>
@@ -197,13 +199,21 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="412" y="133" width="864" height="849" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1618300661002" />
-    <state x="743" y="283" width="424" height="491" key="FileChooserDialogImpl" timestamp="1618279207150">
+    <state x="743" y="283" width="424" height="491" key="FileChooserDialogImpl" timestamp="1618382160964">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="743" y="283" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.997@0.27.1920.997" timestamp="1618279207150" />
+    <state x="743" y="283" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.997@0.27.1920.997" timestamp="1618382160964" />
     <state x="555" y="257" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1618300662270">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="555" y="257" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1618300662270" />
+    <state x="596" y="240" width="728" height="570" key="find.popup" timestamp="1618369047722">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="596" y="240" width="728" height="570" key="find.popup/0.27.1920.997@0.27.1920.997" timestamp="1618369047722" />
+    <state x="597" y="301" width="715" height="456" key="git4idea.merge.GitPullDialog" timestamp="1618367804863">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="597" y="301" width="715" height="456" key="git4idea.merge.GitPullDialog/0.27.1920.997@0.27.1920.997" timestamp="1618367804863" />
   </component>
 </project>
