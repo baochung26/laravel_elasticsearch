@@ -87,6 +87,22 @@ class UserController extends Controller
     public function searchMultiIndex(Request $request){
 
         // SEARCH KET QUA THEO ĐIỀU KIỆN OR
+//        $params = [
+//            "from" => 0, // Bắt đầu từ 0
+//            'size' => 2,
+//            'index' => 'user_index,post_index',
+//            'body'  => [
+//                'query' => [
+//                    'bool' => [
+//                        'should' => [ // must => AND, should => OR
+//                            ['match' => ['name' => 'user1'] ],
+//                            ['match' => ['content' => 'post by user2 content 2']] // match 1 trong các từ
+//                        ],
+//                    ]
+//                ]
+//            ]
+//        ];
+
         $params = [
             "from" => 0, // Bắt đầu từ 0
             'size' => 2,
@@ -96,7 +112,7 @@ class UserController extends Controller
                     'bool' => [
                         'should' => [ // must => AND, should => OR
                             ['match' => ['name' => 'user1'] ],
-                            ['match' => ['content' => 'post by user2 content 2']]
+                            ['match_phrase' => ['content' => 'post by user2 content 2']] // match 1 toàn bộ cụm từ
                         ],
                     ]
                 ]
